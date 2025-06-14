@@ -1,0 +1,86 @@
+#drop duplicates
+import pandas as pd
+
+# Load the CSV
+df = pd.read_csv('game_goals_cleaned.csv')
+
+# Drop duplicates based on 'game_id' (keeps first occurrence by default)
+cleaned_df = df.drop_duplicates(subset=['play_id'])
+
+# Save back to the same CSV (overwrite)
+cleaned_df.to_csv('game_plays_cleaned.csv', index=False)
+
+print(f"Removed {len(df) - len(cleaned_df)} duplicates. Saved cleaned data to game.csv")
+
+
+#fillna
+import pandas as pd
+
+# Load the CSV
+df = pd.read_csv('game_goals_cleaned.csv')
+
+# Drop duplicates based on 'game_id' (keeps first occurrence by default)
+cleaned_df = df.drop_duplicates(subset=['play_id'])
+
+# Save back to the same CSV (overwrite)
+cleaned_df.to_csv('game_plays_cleaned.csv', index=False)
+
+print(f"Removed {len(df) - len(cleaned_df)} duplicates. Saved cleaned data to game.csv")
+
+
+#check for missing values
+import pandas as pd
+
+# Load the CSV
+df = pd.read_csv('game_goals_cleaned.csv')
+
+# Drop duplicates based on 'game_id' (keeps first occurrence by default)
+cleaned_df = df.drop_duplicates(subset=['play_id'])
+
+# Save back to the same CSV (overwrite)
+cleaned_df.to_csv('game_plays_cleaned.csv', index=False)
+
+print(f"Removed {len(df) - len(cleaned_df)} duplicates. Saved cleaned data to game.csv")
+
+
+
+#check for duplicates
+import pandas as pd
+
+# Configuration
+INPUT_CSV = '/Users/jj/Documents/JDE (GenSG)/Final Project/dataset/team_info.csv'
+OUTPUT_CSV = '/Users/jj/Documents/team_info.csv'
+KEY_COLUMNS = ['team_id']  # Columns to check for duplicates
+
+def export_duplicates(input_path, output_path, key_columns):
+    """Find and export duplicates to a new CSV"""
+    try:
+        # Read CSV
+        df = pd.read_csv(input_path)
+        print(f"🔍 Analyzing {len(df)} rows from {input_path.split('/')[-1]}")
+        
+        # Find duplicates (keeping all occurrences)
+        duplicates = df[df.duplicated(subset=key_columns, keep=False)]
+        
+        if duplicates.empty:
+            print(f"✅ No duplicates found using: {key_columns}")
+            return
+        
+        # Sort duplicates together
+        duplicates_sorted = duplicates.sort_values(key_columns)
+        
+        # Export to CSV
+        duplicates_sorted.to_csv(output_path, index=False)
+        print(f"📤 Exported {len(duplicates)} duplicates to {output_path}")
+        
+        # Summary report
+        dup_counts = duplicates.groupby(key_columns).size()
+        print(f"\n📊 Duplicate groups: {len(dup_counts)}")
+        print("Top 5 duplicate keys:")
+        print(dup_counts.sort_values(ascending=False).head(5))
+        
+    except Exception as e:
+        print(f"❌ Error: {str(e)}")
+
+# Run the export
+export_duplicates(INPUT_CSV, OUTPUT_CSV, KEY_COLUMNS)

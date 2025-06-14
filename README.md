@@ -1,10 +1,10 @@
-# 🏒 NHL Performance Analytics Portfolio
+#  NHL Performance Analytics Portfolio
 
 A data engineering and analysis project focused on evaluating player and goaltender performance in the NHL using Python, SQL, and Power BI. This portfolio piece showcases practical skills in data cleaning, transformation, metric calculation, and visualization to drive strategic insights in sports performance.
 
 ---
 
-## 🎯 Project Objective
+## Project Objective
 
 To extract and analyze performance trends from NHL datasets (2000 - 2020) in order to:
 - Assess goaltender performance in various game situations
@@ -13,7 +13,7 @@ To extract and analyze performance trends from NHL datasets (2000 - 2020) in ord
 
 ---
 
-## 👤 My Role
+##  My Role
 
 As part of a team project, I focused on:
 - Cleaning and transforming **goaltender** and **game goal** datasets using Python (pandas)
@@ -25,7 +25,7 @@ As part of a team project, I focused on:
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 - **Python** (pandas, Jupyter Notebook)  
 - **SQL** (PostgreSQL / pgAdmin)  
@@ -36,7 +36,7 @@ As part of a team project, I focused on:
 
 ---
 
-## 📊 Project Highlights
+##  Project Highlights
 
 ### Goaltender Analysis
 - Calculated situational save percentages (Even Strength, Power Play, Shorthanded)
@@ -50,7 +50,7 @@ As part of a team project, I focused on:
 
 ---
 
-## 📂 How to Navigate This Repository
+##  How to Navigate This Repository
 
 | Folder/File | Description |
 |-------------|-------------|
@@ -61,6 +61,6 @@ As part of a team project, I focused on:
 
 ---
 
-## 📬 Contact 
+##  Contact 
 
 Created by **Jun**

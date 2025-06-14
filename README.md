@@ -55,8 +55,8 @@ As part of a team project, I focused on:
 | Folder/File | Description |
 |-------------|-------------|
 | `Portfolio_Presentation.pptx` | Slide deck summarizing project, visuals & insights |
-| `SQL/` | SQL queries used for metric calculations |
-| `Data_Cleaning_Scripts/` | Python scripts for preprocessing and transformation |
+| `SQL Scripts/` | SQL queries used for metric calculations |
+| `Python scripts/` | Python scripts for preprocessing and transformation |
 | `PowerBI_Dashboard.pdf` | Static view of dashboards (if not interactive) |
 
 ---

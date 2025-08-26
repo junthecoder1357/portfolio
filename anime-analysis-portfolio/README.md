@@ -1,46 +1,33 @@
-Data Loading & Exploration
+1) Data Loading & Exploration
 
-- Imported dataset into Pandas DataFrame
+Imported dataset into Pandas DataFrame
 
-- Inspected data types, shape, and columns (info, head)
+Inspected data types, shape, and columns using .info() and .head()
 
-Descriptive Statistics
+2) Descriptive Statistics
 
-- Generated summary statistics for numerical & categorical features
+Generated summary statistics for both numerical and categorical features
 
-Data Cleaning
+3) Data Cleaning
 
-- Identified duplicates by title
+Identified and removed duplicate titles
 
-- Checked for missing values and inconsistencies
+Checked for missing values and data inconsistencies
 
-Initial Insights
+4) Initial Insights
 
-- Distribution of genres (frequency counts)
+Analyzed genre distribution (frequency counts)
 
-- Early descriptive trends in user ratings
+Observed early descriptive trends in user ratings
 
+5) Next Steps / Future Improvements
 
-Next Steps (Future Improvements)
+5.1) Visualizations
 
-Visualizations:
+Rating distributions
 
-- Distribution of ratings
+Top 10 highest-rated anime
 
-- Top 10 highest-rated anime
+Genre frequencies & long-term trends
 
-- Genre frequency and trends
-
-- Correlation analysis between ratings and other features
-
-- Trend analysis by release year (if available in dataset)
-
-Tech Stack
-
-- Python
-
-- Pandas
-
-- NumPy
-
-- Matplotlib & Seaborn
+Correlation analysis between ratings and other features
